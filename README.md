@@ -19,4 +19,10 @@ Listed below:
 
 The following image shows the architecture diagram of the solution
 
-![alt text](https://github.com/mariomateusg/Architecture.jpg?raw=true)
+![alt text](https://github.com/mariomateusg/ecommerce-chatbot/blob/main/Architecture.jpg?raw=true)
+
+In the proposed architecture, the frontend communicates with the backend through websockets where user requests are sent to the backend.
+
+The backend communicates with the Chatbot API to generate the responses to the requests to the users
+
+Finally, the knowledge base that is used by the chatbot is stored in the database
