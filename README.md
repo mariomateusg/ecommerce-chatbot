@@ -51,6 +51,8 @@ The backend is responsible for deploying the web server, where connections are e
 
 The backend source code can be found [here](https://github.com/mariomateusg/backend-chatbot)
 
+<a name="chatbot"/>
+
 ### Chatbot API
 
 The chatbot API contains the business logic to respond to user requests received by the Backend. The communication between the backend and the API is done through 2 methods:
@@ -60,4 +62,6 @@ The chatbot API contains the business logic to respond to user requests received
 
 
 For the analysis of the requests, the NLP library developed in Go was used, which through a knowledge base allows semantic analysis and generate responses to requests. The documentation of this library can be found at this [link](https://github.com/james-bowman/nlp)
+
+The chatbot API source code can be found [here](https://github.com/mariomateusg/ecommerce-chatbot)
 
