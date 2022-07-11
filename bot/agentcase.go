@@ -86,7 +86,7 @@ func randomNumber(min, max int) int {
 func (a *AgentCase) Greetings() string {
 
 	sampleQuestionIndex := randomNumber(0, len(a.sampleQuestions))
-	greeting := "Hi there! I'm Case. You can ask me a question on Isomorphic Go. Such as...\"" + a.sampleQuestions[sampleQuestionIndex] + "\""
+	greeting := "Hi there! I'm Case. You can ask me questions such as " + a.sampleQuestions[sampleQuestionIndex] + "\""
 	return greeting
 
 }
