@@ -50,3 +50,14 @@ The frontend source code can be found [here](https://github.com/mariomateusg/fro
 The backend is responsible for deploying the web server, where connections are established via websocket. Requests received by the frontend are processed and then the Chatbot API is used to answer user questions. The backend allows the connection of several users.
 
 The backend source code can be found [here](https://github.com/mariomateusg/backend-chatbot)
+
+### Chatbot API
+
+The chatbot API contains the business logic to respond to user requests received by the Backend. The communication between the backend and the API is done through 2 methods:
+
+* Greeting: 
+* Reply
+
+
+For the analysis of the requests, the NLP library developed in Go was used, which through a knowledge base allows semantic analysis and generate responses to requests. The documentation of this library can be found at this [link](https://github.com/james-bowman/nlp)
+
