@@ -65,3 +65,11 @@ For the analysis of the requests, the NLP library developed in Go was used, whic
 
 The chatbot API source code can be found [here](https://github.com/mariomateusg/ecommerce-chatbot)
 
+<a name="postgres"/>
+
+### Postgres DB
+
+The knowledge base that allows the Chabot API to be trained to respond to user requests is stored in the database.
+
+
+
