@@ -16,3 +16,7 @@ Listed below:
 * Backend bot.
 * Chatbot API.
 * Postgres DB.
+
+The following image shows the architecture diagram of the solution
+
+![alt text](https://github.com/mariomateusg/Architecture.jpg?raw=true)
