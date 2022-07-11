@@ -85,4 +85,10 @@ After the creation of the database. The script for creating the tables and inser
 
 Once the script is executed, continue with the following commands:
 
+* kubectl apply -f ecommerce-bot.yaml
+* kubectl apply -f backend-chatbot.yaml
+* kubectl apply -f frontend.yaml
+
+With the scripts executed you can enter the page where the chat will be displayed for interaction with the bot
+
 
