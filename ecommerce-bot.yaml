@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ecommerchat-deployment
+  labels:
+    app: ecommerchat
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ecommerchat
+  template:
+    metadata:
+      labels:
+        app: ecommerchat
+    spec:
+      containers:
+      - name: ecommerchat
+        image: mamateus/ecommerce:1.4
+        ports:
+        - containerPort: 8080
+        env:
+        - name: DB_USER
+          valueFrom:
+            secretKeyRef:
+              name: postgres-secret
+              key: postgres-user
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: postgres-secret
+              key: postgres-password
+        - name: DB_NAME
+          value: "project"
+        - name: DB_HOST
+          value: postgresdb-service
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ecommerchat-service
+spec:
+  type : NodePort
+  selector:
+    app: ecommerchat
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+      nodePort: 30000
