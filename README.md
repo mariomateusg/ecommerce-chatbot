@@ -47,3 +47,15 @@ The decision to use websockets over rest is that they allow for a higher amount 
 
 
 The frontend source code can be found [here](https://github.com/mariomateusg/frontend-chatbot)
+
+<a name="backend"/>
+
+### Backend bot
+
+The backend is responsible for deploying the web server, where connections are established via websocket.
+
+Requests received by the frontend are processed and then the Chatbot API is used to answer user questions.
+
+The backend allows the connection of several users.
+
+The backend source code can be found [here](https://github.com/mariomateusg/backend-chatbot)
