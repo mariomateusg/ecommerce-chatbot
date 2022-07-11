@@ -29,6 +29,20 @@ Finally, the knowledge base that is used by the chatbot is stored in the databas
 
 <a name="components"/>
 
-## Componentes
+## Components
 
 This section describes the components described in the architecture
+
+<a name="frontend"/>
+### Frontend bot
+
+The frontend is responsible for interacting with the user.
+
+The component was developed using the React framework.
+
+The communication between the frontend and backend is done through websockets.
+
+The decision to use websockets over rest is that they allow for a higher amount of efficiency compared to REST because they do not require the HTTP request/response overhead for each message sent and received.
+
+
+The frontend source code can be found here
