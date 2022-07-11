@@ -5,7 +5,7 @@ This document seeks to describe in a general way the architecture, design and co
 ## Table of Contents  
 [Architecture](#architecture)  
 [Components](#components)  
-...snip...    
+[Installation](#installation)   
 <a name="architecture"/>
 ## Architecture
 The architecture of the solution comprises 4 major components.
@@ -71,5 +71,18 @@ The chatbot API source code can be found [here](https://github.com/mariomateusg/
 
 The knowledge base that allows the Chabot API to be trained to respond to user requests is stored in the database.
 
+<a name="Installation"/>
+
+## Installation
+
+The deployment must be done on kubernetes. For the installation you must execute the following commands:
+
+* kubectl apply -f postgres-config.yaml
+* kubectl apply -f postgres-secret.yaml
+* kubectl apply -f postgres.yaml
+
+After the creation of the database. The script for creating the tables and inserting the data must be executed. After the creation of the database. The script for creating the tables and inserting the data must be executed. The script is [here](https://github.com/mariomateusg/ecommerce-chatbot/blob/main/database/models.sql)
+
+Once the script is executed, continue with the following commands:
 
 
