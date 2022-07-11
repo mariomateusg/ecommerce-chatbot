@@ -37,14 +37,9 @@ This section describes the components described in the architecture
 
 ### Frontend bot
 
-The frontend is responsible for interacting with the user.
-
-The component was developed using the React framework.
-
+The frontend is responsible for interacting with the user. The component was developed using the React framework.
 The communication between the frontend and backend is done through websockets.
-
 The decision to use websockets over rest is that they allow for a higher amount of efficiency compared to REST because they do not require the HTTP request/response overhead for each message sent and received.
-
 
 The frontend source code can be found [here](https://github.com/mariomateusg/frontend-chatbot)
 
@@ -52,10 +47,6 @@ The frontend source code can be found [here](https://github.com/mariomateusg/fro
 
 ### Backend bot
 
-The backend is responsible for deploying the web server, where connections are established via websocket.
-
-Requests received by the frontend are processed and then the Chatbot API is used to answer user questions.
-
-The backend allows the connection of several users.
+The backend is responsible for deploying the web server, where connections are established via websocket. Requests received by the frontend are processed and then the Chatbot API is used to answer user questions. The backend allows the connection of several users.
 
 The backend source code can be found [here](https://github.com/mariomateusg/backend-chatbot)
