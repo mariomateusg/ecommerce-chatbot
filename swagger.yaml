@@ -1,0 +1,75 @@
+swagger: "2.0"
+info:
+  description: "This is the Chatbot API.  You can find the code base at [Chatbot API](https://github.com/mariomateusg/ecommerce-chatbot)."
+  version: "1.0.0"
+  title: "Swagger Chatbot API"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "mario.mateus@gmail.com"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "chatbotapi.swagger.io"
+basePath: "/v2"
+tags:
+- name: "chatbot"
+  description: "Ecommerce Chatbot"
+  externalDocs:
+    description: "Find out more"
+    url: "https://github.com/mariomateusg/ecommerce-chatbot"
+schemes:
+- "http"
+paths:
+  /greetings:
+    get:
+      tags:
+      - "chatbot"
+      summary: "Get an initial greetings from Agent Bot"
+      description: ""
+      operationId: "greeting"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "string"
+  /reply:
+    post:
+      tags:
+      - "chatbot"
+      summary: "Get a reply from Agent bot given a query"
+      description: ""
+      operationId: "reply"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Query from a customer"
+        required: true
+        schema:
+          $ref: "#/definitions/ReplyEntry"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/ReplyOutput"
+definitions:
+  ReplyEntry:
+    type: "object"
+    properties:
+      query:
+        type: "string"
+  ReplyOutput:
+    type: "object"
+    properties:
+      result:
+        type: "string"
+  
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"
