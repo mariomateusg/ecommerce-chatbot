@@ -101,6 +101,12 @@ With the scripts executed you can enter the page where the chat will be displaye
 
 ## Chatbot API Documentation
 
-The API documentation is found in the document
+The API documentation is found in the document [swagger.yaml](https://github.com/mariomateusg/ecommerce-chatbot/blob/main/swagger.yaml)
+The API has two methods, described below:
+
+* greetings: Get an initial greetings from Agent Bot.
+* reply: Get a reply from Agent bot given a query
+
+
 
 
