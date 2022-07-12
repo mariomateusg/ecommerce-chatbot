@@ -6,7 +6,6 @@ This document seeks to describe in a general way the architecture, design and co
 [Architecture](#architecture)  
 [Components](#components)  
 [Installation](#installation)
-
 [Documentation](#documentation)  
 <a name="architecture"/>
 ## Architecture
