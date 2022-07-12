@@ -6,6 +6,7 @@ This document seeks to describe in a general way the architecture, design and co
 [Architecture](#architecture)  
 [Components](#components)  
 [Installation](#installation)
+
 [Documentation](#documentation)  
 <a name="architecture"/>
 ## Architecture
@@ -92,7 +93,7 @@ Once the script is executed, continue with the following commands:
 
 With the scripts executed you can enter the page where the chat will be displayed for interaction with the bot
 
-<a name="documentatio"/>
+<a name="documentation"/>
 
 ## Chatbot API Documentation
 
