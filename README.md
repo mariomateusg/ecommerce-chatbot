@@ -3,11 +3,16 @@
 This document seeks to describe in a general way the architecture, design and components that are part of the chatbot.
 
 ## Table of Contents  
-[Architecture](#architecture)  
+[Architecture](#architecture)
+
 [Components](#components)  
+
 [Installation](#installation)
+
 [Documentation](#documentation)  
+
 <a name="architecture"/>
+
 ## Architecture
 The architecture of the solution comprises 4 major components.
 
