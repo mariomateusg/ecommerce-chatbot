@@ -5,7 +5,8 @@ This document seeks to describe in a general way the architecture, design and co
 ## Table of Contents  
 [Architecture](#architecture)  
 [Components](#components)  
-[Installation](#installation)   
+[Installation](#installation)
+[Documentation](#documentation)  
 <a name="architecture"/>
 ## Architecture
 The architecture of the solution comprises 4 major components.
@@ -71,7 +72,7 @@ The chatbot API source code can be found [here](https://github.com/mariomateusg/
 
 The knowledge base that allows the Chabot API to be trained to respond to user requests is stored in the database.
 
-<a name="Installation"/>
+<a name="installation"/>
 
 ## Installation
 
@@ -90,5 +91,11 @@ Once the script is executed, continue with the following commands:
 * kubectl apply -f frontend.yaml
 
 With the scripts executed you can enter the page where the chat will be displayed for interaction with the bot
+
+<a name="documentatio"/>
+
+## Chatbot API Documentation
+
+The API documentation is found in the document
 
 
